@@ -13,6 +13,7 @@ endif
 
 CFLAGS  += 	-Wall -fPIC -I/usr/include/python2.7/ -I$(PATH_SIMILARITY) -I$(PATH_FORMULA)
 
+CFLAGS  +=      -I/usr/include/muParser -I/usr/include/python2.7
 mkdir	=	mkdir -p
 CD      =       cd
 RM      =       rm -f

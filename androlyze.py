@@ -18,7 +18,7 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with Androguard.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
+import sys, os, cmd, threading, code, re
 
 from optparse import OptionParser
 
@@ -36,8 +36,8 @@ from androguard.decompiler.decompiler import *
 
 from androguard.util import *
 from androguard.misc import *
-
-from IPython.terminal.embed import InteractiveShellEmbed
+from androguard.core import androconf
+from IPython.frontend.terminal.embed import InteractiveShellEmbed
 from IPython.config.loader import Config
 
 
